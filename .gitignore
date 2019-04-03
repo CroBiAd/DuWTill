@@ -240,3 +240,22 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+/WebTilling
+/sqlite-netFx46-setup-bundle-x86-2015-1.0.110.0.exe
+/DuWTill/Web.Release.config
+/DuWTill/Web.Debug.config
+/DuWTill/Project_Readme.html
+/DuWTill/favicon.ico
+/DuWTill/Scripts/WebForms/WebParts.js
+/DuWTill/Scripts/WebForms/TreeView.js
+/DuWTill/Scripts/_references.js
+/DuWTill/Scripts/respond.js
+/DuWTill/Scripts/modernizr-2.6.2.js
+/DuWTill/Scripts/jquery-1.10.2.min.map
+/DuWTill/Scripts/jquery-1.10.2.js
+/DuWTill/Scripts/bootstrap.js
+/DuWTill/Content/bootstrap.css
+/DuWTill/Content/bootstrap.min.css
+/DuWTill/Content/bootstrap_spacelab.css
+/DuWTill/Properties/PublishProfiles
