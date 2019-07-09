@@ -60,13 +60,13 @@ namespace WebTilling {
                 r.Cells[0].ToolTip = "Mutation number, a.k.a. internal ID.";
                 r.Cells[1].ToolTip = "Individual plant.";
                 r.Cells[3].ToolTip = "Mutation position on a reference contig.";
-                r.Cells[5].ToolTip = "Parent Allele.";
+                r.Cells[5].ToolTip = "Control Allele.";
                 r.Cells[6].ToolTip = "Mutant Allele.";
                 r.Cells[7].ToolTip = "Number of reads at the mutation position.";
             } else if (r.RowType == DataControlRowType.DataRow) {
                 TextBox txt = (TextBox)r.FindControl("txtSeq");
                 DataRowView v = (DataRowView)r.DataItem;
-                txt.Text = @">#" + v["mutID"] + ": " + v["mutant"].ToString() + " " + v["mutType"] + " at position " + v["position"].ToString() + " on " + v["ctg"] + Environment.NewLine.Normalize() + v["flankSeq"];
+                txt.Text = @">#" + v["mutID"] + ": " + v["mutant"].ToString() + ", " + v["mutType"] + " at position " + v["position"].ToString() + " on " + v["ctg"] + Environment.NewLine.Normalize() + v["flankSeq"];
             }
         }
     }

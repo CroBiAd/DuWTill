@@ -1,7 +1,7 @@
 <%@ Page Title="Search" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="WebTilling.Search" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <fieldset>
-        <legend>Get all mutations for all Mutants occuring within a specific Contig.</legend>
+        <legend>Query for mutations in a particular contig across all mutants.</legend>
         <div class="col-md-4 form-group">
             <label for="txtContig">Contig:</label>
             <asp:TextBox ID="txtContig" runat="server" CssClass="form-control" placeholder="i.e. ctg000060" Text="ctg000060" OnPreRender="txtContig_PreRender" CausesValidation="True" MaxLength="50" />
@@ -19,10 +19,10 @@
         </div>
     </fieldset>
     <fieldset>
-        <legend>Alternativly, get all mutations on all Contigs for a specific Mutant.</legend>
+        <legend>Alternatively, retrieve all mutations present in a specific mutant line.</legend>
         <div class="col-md-4 form-group">
             <label for="txtMut">Mutant ID:</label>
-            <asp:TextBox ID="txtMut" runat="server" CssClass="form-control " placeholder="i.e. TA00285-7_mutant249_M2 or 249" OnPreRender="txtMut_PreRender" CausesValidation="True" MaxLength="50" />
+            <asp:TextBox ID="txtMut" runat="server" CssClass="form-control " placeholder="i.e. mutant249M2 or 249" OnPreRender="txtMut_PreRender" CausesValidation="True" MaxLength="50" />
             <asp:RegularExpressionValidator ID="regexMut" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="txtMut" ValidationExpression="[\w* -]*"></asp:RegularExpressionValidator>
         </div>
     </fieldset>
@@ -47,7 +47,7 @@
                     <asp:BoundField DataField="ctg" HeaderText="DECaR Contig" SortExpression="ctg" ReadOnly="True" />
                     <asp:BoundField DataField="position" HeaderText="Position" SortExpression="position" ReadOnly="True" />
                     <asp:BoundField DataField="mutType" HeaderText="Mutation type" ReadOnly="True" />
-                    <asp:BoundField DataField="parentAllele" HeaderText="Parent" ReadOnly="True" ItemStyle-CssClass="text-center" >
+                    <asp:BoundField DataField="parentAllele" HeaderText="Control" ReadOnly="True" ItemStyle-CssClass="text-center" >
                         <ItemStyle CssClass="text-center"></ItemStyle>
                     </asp:BoundField>
                     <asp:BoundField DataField="mutAllele" HeaderText="Mutant" ReadOnly="True" ItemStyle-CssClass="text-center" >

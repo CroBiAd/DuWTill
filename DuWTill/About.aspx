@@ -3,11 +3,11 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <%--    <h2><%: Title %>.</h2>--%>
     <h3>Background:</h3>
-    <p>Seeds of a durum wheat accession (ACPFG accession number TA-00285-7) were mutagenized with 0.7% EMS and 500 mutant plants grown through one further generation to seed. 
-        In the next generation (M2) DNA from 100 of these plants and the unmutagenized control ‘parent’ was sequenced following reduction by exome capture using the 106.9 Mb 
+    <p>Seeds of an advanced durum breeding line, UAD0951096_F2:5, were mutagenized with 0.7% EMS and 500 mutant plants grown through one further generation to seed. 
+        In the next generation (M2) DNA from 99 of these plants and the unmutagenized control UAD0951096_F2:5 was sequenced following reduction by exome capture using the 106.9 Mb 
         <a href="https://sequencing.roche.com/en/products-solutions/by-category/target-enrichment/shareddesigns.html">Roche NimbleGen SeqCap</a> Wheat Exome Design.</p>
-    <p>A novel Durum Exome Capture Reference (DECaR) was built from available durum whole genome assemblies: reads from the unmutagenized control sample were mapped into two publically available durum wheat whole genome assemblies of 
-        <a href="https://www.interomics.eu/durum-wheat-genome-disclosure-agreement">Svevo</a> and <a href="https://opendata.earlham.ac.uk/opendata/data/Triticum_turgidum/EI/v1.1/">Kronos EI v1</a> , and then combined with 
+    <p>To improve variant calling, a novel consolidated Durum Exome Capture Reference (DECaR) was built from available durum whole genome assemblies: reads from the unmutagenized control sample were mapped into two publically available durum wheat whole genome assemblies of 
+        <a href="https://www.interomics.eu/durum-wheat-genome">Svevo</a> and <a href="https://opendata.earlham.ac.uk/opendata/data/Triticum_turgidum/EI/v1.1/">Kronos EI v1</a> , and then combined with 
         assembled unmapped control reads. Putative mutations were identified by comparing the DECaR reference with each mutant plant’s sequence. 
         A read depth is reported for each putative mutation to indicate the comparative level of certainty for the mutation call.</p>
     <h3>How to:</h3>
@@ -16,7 +16,7 @@
         <li>The most similar sequences in the available sequenced exome will be displayed within their contigs. Scroll down and expand the<samp>&nbsp;BLAST&nbsp;Search&nbsp;Results&nbsp;</samp>panel to see the base pair resolution alignment of your sequence of interest with the reference.</li>
         <li>Scroll back up and choose your favourite hit by clicking on the button to the left marked<samp>&nbsp;Select</samp>.</li>
         <li>You will be taken to the<samp>&nbsp;<a runat="server" href="~/Search">Search</a>&nbsp;</samp>page where you will find all the putative mutations in your sequence of interest called within the sequenced plants of the population. 
-            Note: if you see no results, no mutations were called in these 100 plants for your sequence of interest.</li>
+            Note: if you see no results, no mutations were called in these 99 plants for your sequence of interest.</li>
         <li>Results in the<samp>&nbsp;<a runat="server" href="~/Search">Search</a>&nbsp;</samp>page can be sorted by<samp>&nbsp;#, Mutant ID, Contig, Position, Depth&nbsp;</samp>and<samp>&nbsp;Chromosome</samp>&nbsp;(Chr).</li>
         <li>Column headings have short descriptions in pop-ups when you mouse over the heading. See the table below for longer descriptions.</li>
         <li>Copy or note your favourite mutant id, contig number and mutation position (plus any other details you like). You can use these to search directly in the<samp>&nbsp;<a runat="server" href="~/Search">Search</a>&nbsp;</samp>page next time, without having to repeat the BLAST.</li>
@@ -55,8 +55,8 @@
                 <td>The induced mutation type – normally either a substitution of one base for another, or a deletion of one or more bases.</td>
             </tr>
             <tr>
-                <td><samp>Parent</samp></td>
-                <td>Base call at the position in the non-mutagenized control 'parent'.</td>
+                <td><samp>Control</samp></td>
+                <td>Base call at the position in the non-mutagenized control.</td>
             </tr>
             <tr>
                 <td><samp>Mutant</samp></td>
