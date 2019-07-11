@@ -1,9 +1,9 @@
 ﻿# YourDB
-This project's sole purpose is to help with formatting mutations calls as an SQLite database.
-* If you have no intent to substitute you own data, don't read further. Our mutations calls are already in App_Data folder of DuWTill project.
-* If you prefer other means of creating SQLite database, say [Mozilla add-on](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager-webext/), do it. But refer to the table description below and in Program.cs.
+This project's sole purpose is to help with formatting mutation calls as an SQLite database.
+* If you have no intent to substitute you own data, don't read further. Our mutation calls are already in the App_Data folder of the DuWTill project.
+* If you prefer other means of creating the SQLite database, say [Mozilla add-on](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager-webext/), do it. But refer to the table description below and in Program.cs.
 * If you want to switch to SQL Server, you can do it too with the appropriate **solution configuration** (not discussed here as part of this distribution). We tried SQLExpress and full blown SQL Server.
-* If you need to substitute the reference as well, follow the instructions in README in DuWTill project on how to create blastable database.
+* If you need to substitute the reference as well, follow the instructions in README in the DuWTill project on how to create a blastable database.
 
 We presume that you've called mutations by following our [pipeline](https://github.com/CroBiAd/TILLinG-mutants) or by other means. Then,
 
@@ -21,8 +21,8 @@ We presume that you've called mutations by following our [pipeline](https://gith
    * *chr*	- chromosome of the sequence containing the mutation
    * *flankStart*	- start of a flanking sequence
    * *flankEnd* - end of a flanking sequence
-   * *assemblyID* - optional, we kept original naming from Svevo and Kronos assemblies
-2. **YourDB** is a simple console application which is better to run from within Visual Studio. Copy csv file described above into `DuWTill\App_Data` folder and set command line arguments and working directory on `YourDB->Properties->Debug` page, if required:
+   * *assemblyID* - optional, we kept original naming from the Svevo and Kronos assemblies
+2. **YourDB** is a simple console application which is better to run from within Visual Studio. Copy the csv file described above into the `DuWTill\App_Data` folder and set the command line arguments and working directory on the `YourDB->Properties->Debug` page, if required:
 
    ![alt text](debug.png "Command line arguments on Debug page")
 
@@ -34,7 +34,7 @@ We presume that you've called mutations by following our [pipeline](https://gith
 
    Program accepts short/long Linux/Windows styles, i.e. `--csvfilename=Tilling` OR `-f=Tilling` OR `/csvfilename:Tilling` OR `/f:Tilling`
 
-3. You can now run YourDB (Ctrl+F5). The results would be similar to 
+3. You can now run YourDB (Ctrl+F5). The results will be similar to this: 
 
    ![alt text](run.png "Example output from YourDB")
 
