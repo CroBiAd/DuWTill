@@ -30,7 +30,7 @@
         <div class="navbar navbar-inverse">
             <a class="navbar-brand align-top" href="http://www.sa.gov.au" style="padding: 0px 15px 0px 15px">
                 <asp:Image ID="govSA" runat="server" ImageUrl="~/Content/gov-sa-logo.png" Height="50px" /></a>
-            <a class="navbar-brand align-top" href="http://www.acpfg.com.au" style="padding: 0px 15px 0px 0px">
+            <a class="navbar-brand align-top" style="padding: 0px 15px 0px 0px">
                 <asp:Image ID="Image1" runat="server" ImageUrl="~/Content/ACPFG Logo White.png" /></a>
             <div class="container">
                 <div class="navbar-header">
@@ -73,12 +73,12 @@
                 <a href="http://www.unitus.it"><asp:Image runat="server" ImageUrl="~/Content/uni-tuscia-logo.png" Height="50px" /></a>
             </div>
             <div class="col-md-4 text-right">
-                <a href="http://www.acpfg.com.au"><asp:Image runat="server" ImageUrl="~/Content/acpfg_logo.png" Height="50px" /></a>
+                <a><asp:Image runat="server" ImageUrl="~/Content/acpfg_logo.png" Height="50px" /></a>
             </div>
         </div>
         <br />
         <p class="text-center small"><a href="~/About" runat="server">About</a>&nbsp;|&nbsp;<a href="~/Contact" runat="server">Contact</a>&nbsp;|&nbsp;
-            ©&nbsp;Copyright&nbsp;2014-2017&nbsp;<a href="http://www.acpfg.com.au/">Australian&nbsp;Centre&nbsp;for&nbsp;Plant&nbsp;Functional&nbsp;Genomics</a>
+            ©&nbsp;Copyright&nbsp;2014-2017&nbsp;<a>Australian&nbsp;Centre&nbsp;for&nbsp;Plant&nbsp;Functional&nbsp;Genomics</a>
         </p>
 	</footer>
 </body>

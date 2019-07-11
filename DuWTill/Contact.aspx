@@ -9,10 +9,10 @@
     <address>
         Australian Centre for Plant Functional Genomics <br />
         School of Agriculture, Food and Wine <br />
-        University of Adelaide, Waite Campus
+        University of Adelaide, Waite Campus <br />
+        <a href="http://www.adelaide.edu.au">www.adelaide.edu.au</a>
     </address>
     <address>
-        Plant Genomics Centre|Hartley Grove|Urrbrae SA 5064 <br />
-        <a href="http://www.acpfg.com.au">www.acpfg.com.au</a>
+        Plant Genomics Centre | Hartley Grove | Urrbrae SA 5064 <br />
     </address>
 </asp:Content>
